@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkslategray;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+span {
+  color: #a855f7;
+}
+
+.icon-logo {
+  max-width: 2rem;
+}
+
+.submit-btn {
+  background-color: greenyellow;
+  border: none;
+  padding: 0.4em;
+  border-radius: 3px;
+  box-shadow: 3px 3px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.submit-btn:hover {
+  box-shadow: none;
+}
+
+form {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-input {
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.icon-add {
+  max-width: 1.5rem;
+}
+
+.filter-opt {
+  margin-top: 10px;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  outline: none;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-list {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  min-width: 6rem;
+  padding-left: 10px;
+}
+
+.edit-mode {
+  color: grey;
+}
+
+.task-list li button i {
+  width: 15px;
+  color: #d52020;
+}
+
+.delete-btn {
+  background: transparent;
+  padding: 5px;
+}
+
+.clear-btn {
+  margin-top: 20px;
+  max-width: 50%;
+  font-size: 16px;
+  background-color: crimson;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background-color: #f1f1f1;
+}
